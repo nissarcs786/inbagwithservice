@@ -1,0 +1,60 @@
+<ion-view>
+    <ion-pane>
+       <ion-header-bar class="bar bar-header bar-calm">
+            <a class="button icon-left ion-ios-arrow-left"></a>
+            <h1 class="title">in</h1>
+            <a class="button icon ion-ios-cart"></a>
+       </ion-header-bar>
+       <ion-content><br>
+
+            <div class = "one">
+            <button class="button button-block button-positive ion-social-facebook" >
+                 Login With Facebook
+            </button>
+            </div>
+
+            <div class = "one">
+            <button class="button button-block button-assertive ion-social-googleplus">
+                 Login With Google+
+            </button>
+            </div>
+
+            <center>______________or_____________</center>
+            <form  name="loginForm" novalidate>
+                <center>Enter your registered e-mail ID and password to login your Account</center><br>
+
+                     <label class="item item-input">
+                     <input 
+                        type="text" 
+                        ng-model="loginData.username"
+                        name="username"
+                        required
+                        placeholder="Email">
+                     </label><br>
+
+                     <label class="item item-input">
+                     <input 
+                        type="password"
+                        ng-model="loginData.password"
+                        name="password"
+                        required
+                        placeholder="Password">
+                     </label><br>
+                     </div>
+                
+                <div class = "one">
+                <button 
+                    class="button button-full button-calm"
+                    validation-submit="loginForm"
+                    ng-click="doLogin()"
+                    type="submit">
+                Login
+                </button>
+                </div>
+
+                <center>Don't have account?</center>
+                <center><a href="#Login">Sign up!</a></center>
+            </form>
+       </ion-content>
+    </ion-pane>
+</ion-view>

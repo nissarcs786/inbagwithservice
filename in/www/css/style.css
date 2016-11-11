@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+
+div.one{
+    background-color: default;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;  
+}
